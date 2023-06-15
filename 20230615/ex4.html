@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    study with javascript ex4
+    <script>
+        $(function() {
+            $.get('url', function(response) {
+                parseValue(response, function(id) {
+                    auth(id, function(result) {
+                        display(result, function(text) {
+                            console.log(text);
+                        })
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>
